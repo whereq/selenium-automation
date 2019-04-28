@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "page-speed-demo": {
+    "page-speed-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/page-speed-demo",
+            "outputPath": "dist/page-speed-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "page-speed-demo:build"
+            "browserTarget": "page-speed-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "page-speed-demo:build:production"
+              "browserTarget": "page-speed-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "page-speed-demo:build"
+            "browserTarget": "page-speed-angular:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "page-speed-demo-e2e": {
+    "page-speed-angular-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "page-speed-demo:serve"
+            "devServerTarget": "page-speed-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "page-speed-demo:serve:production"
+              "devServerTarget": "page-speed-angular:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "page-speed-demo"
+  "defaultProject": "page-speed-angular"
 }
