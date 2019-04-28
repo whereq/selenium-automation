@@ -7,6 +7,9 @@ import com.whereq.automation.selenium.ExplicitWait;
 import com.whereq.automation.selenium.LoadingMeasurer;
 import com.whereq.automation.selenium.webdriver.WebDriverFactory;
 
+/**
+ * The main class to work with an angular app to show how to use selenium java APIs 
+ */
 public class Test {
 
 	public static void main(String[] args) {
